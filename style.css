@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+
+
+*{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georama', sans-serif;
+}
+
+.Head{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.logo-main{
+    width: 95vw;
+    margin: auto;
+    height:  5rem;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-main a img{
+    width: 10rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+/* MAIN */
+.main{
+    width: 100vw;
+    height: 80vh;
+    /* for displying center */
+    display: flex;
+     /* background-color:aqua;  */
+    justify-content: center;
+    align-items: center;
+    /* by making it column, it will arrage itself in colum wise center */
+    flex-direction: column; 
+    color: blue;
+}
+
+.main h1{
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+
+.members{
+    display: flex;
+    /* this make sure that  when we make it responsive, it is properly algin   */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.members .btn, .add{
+    /* to make theheight and weidth, small or big according to the responciveis */
+    height: 10vw;
+    min-height: 8.4rem;
+    max-height: 20rem;
+
+    width: 10vw;
+    min-width:8.4rem ;
+    max-width: 20rem;
+
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    margin-top: 3rem;
+    margin-right: 3.5rem;
+    position: relative;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.members .btn:nth-child(1){
+    background-image: url("./user7.jpg");
+
+    background-size: cover;
+}
+
+.members .btn:nth-child(2){
+    background-image: url("./user10.png");
+}
+.members .btn:nth-child(3){
+    background-image: url("./user8.png");
+}
+
+.members .btn:hover{
+    box-shadow: inset 0 0 0 5px  darkgrey;
+}
+
+.members .btn span, .add span{
+    width: inherit;
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    text-transform: capitalize;
+    color: lightpink;
+    font-size: 1.5rem;
+}
+
+
+
+
+.fa-plus-circle{
+    font-size: 7vw;
+    color: grey;
+    opacity: 0.7;
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.add{
+    background-color: transparent;
+}
+
+.add:hover{
+    background-color: aliceblue;
+    color: darkgray;
+    opacity: 1;
+}
+
+.manage{
+    border: 1px solid gray;
+    color: darkgrey;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-top: 10rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.manage:hover{
+    border: 1px solid white;
+    color: white;
+}
